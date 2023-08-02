@@ -1,0 +1,113 @@
+/* Base styles for header container */
+.header {
+  background: #E3E6F3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+  
+  /* Navigation bar styles */
+  .barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Añadido para separar logo y navegación */
+  }
+  
+  /* Logo styles */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 5px;
+  }
+  
+  /* Navigation icon styles */
+  .nav_icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  /* Checkbox styles */
+  .nav_checkbox {
+    display: none;
+  }
+  
+  /* Checkbox styles */
+  .nav_carrito {
+    display: none;
+  }
+  
+  /* Navigation list styles */
+  .navegacion {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Link styles */
+  .navegacion a {
+    color: #000;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: .3rem;
+  }
+  
+  /* Active menu item styles */
+  .navegacion a.active {
+    background-color: #ceb2b2;
+    color: #fff;
+  }
+  
+  
+
+  /* Media query for responsive design */
+  @media screen and (max-width: 600px) {
+    .barra {
+      flex-direction: row-reverse; /* Cambiado para alinear navegación a la derecha */
+      align-items: center;
+      justify-content: space-between; /* Añadido para separar logo y navegación */
+    }
+  
+    .nav_icon {
+      display: block;
+      order: -1; /* Añadido para colocar el nav_icon al final del flex container */
+      margin-right:10px;
+    }
+
+      /* Checkbox styles */
+  .nav_carrito {
+    display: block;
+    order: -1;
+    padding-left: 95px;
+    
+  }
+
+    .navegacion {
+      display: none;
+      grid-template-columns: auto;
+      gap: 10px;
+      position: absolute;
+      top: 10px;
+      right: 10px; /* Alineado a la derecha */
+      background-color: #f5f1f1;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px; /* Aumentado el padding para que el menú se vea más grande */
+      font-size: medium;
+    }
+  
+    /* Show menu items when checkbox is checked */
+    .nav_checkbox:checked ~ .navegacion {
+      display: grid;
+    }
+    .nav_carrito:checked ~ .navegacion {
+      display: grid;
+    }
+  }
+  

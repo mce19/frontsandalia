@@ -1,0 +1,108 @@
+.chemas {
+    display: grid;
+    grid-template-columns: 2 1fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.contenido {
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 0 0 2px rgba(104, 108, 142, 0.3); */
+
+}
+
+@media only screen and (max-width: 600px) {
+    .contenido {
+      display:grid;
+      grid-template-columns: 1.5fr 1.5fr;
+
+    }
+
+    .chemas {
+        /* Agregamos el espaciado deseado */
+        margin: 10px; /* Por ejemplo, aquí se agrega un margen de 10px */
+      }
+
+      .chemas > * {
+        /* Ajusta el tamaño de los elementos internos */
+        width: 100%; /* Esto hará que los elementos ocupen el 100% del ancho de su contenedor */
+        max-width: 50px; /* Puedes ajustar el tamaño máximo deseado para los elementos */
+      }
+
+       /* Estilos para el nombre del producto */
+  /* Estilos para el precio del producto */
+  .chemas .precio  {
+    font-size: 16px;
+  }
+
+  .chemas .palabra  {
+    font-size: 16px; 
+  }
+
+  }
+  
+  .chemas > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+.contenido:hover{
+ cursor: pointer;
+}
+
+.ver {
+    padding: 1rem;
+    background-color: rgb(42, 42, 67);
+    box-shadow: 0 0 10px rgba(104, 108, 142, 0.3); 
+}
+.contenido h3 {
+    margin-top: 0px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin: auto;
+     
+}
+.descripcion {
+    overflow: hidden;
+    font-size: 1.6rem;
+    margin: auto;
+}
+.precio {
+    color: var(--boton);
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 700;
+}
+.enlace {
+    margin-top: 1rem;
+    display: block;
+    background-color: var(--boton);
+    color: var(--white);
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition-property: background-color;
+    transition-duration: 300ms;
+    border-radius: 0.6rem;
+    
+}
+.enlace:hover {
+    background-color: var(--primary);
+}
+
+.img {
+    height: 340px;
+    border-radius: 15px;
+
+  }
+
+  
