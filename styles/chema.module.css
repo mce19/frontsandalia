@@ -8,9 +8,9 @@
     .contenido {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
+        margin-top: 20px;
     }
 }
-
 .contenido h3 {
     font-size: 3rem;
     text-transform: uppercase;
@@ -71,3 +71,10 @@ transition-duration: 300ms;
 border-radius: 10px;
   }
   
+  .volver {
+    margin-top: 20px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--boton);
+    text-align: center;
+  }

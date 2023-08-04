@@ -12,7 +12,7 @@ export default function Footer() {
                     </Link>
 
                     <Link href="/nosotros">
-                        Historia
+                        Showroom
                     </Link>
 
                     <Link href="/tienda">

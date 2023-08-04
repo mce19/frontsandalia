@@ -10,10 +10,10 @@ export default function Nosotros() {
       description="Sobre mi, Andres Vargas, Blog de crecimiento"
     >
    <main className="contenedor">
-            <h1 className="heading">Sobre mi</h1>
+            <h1 className="heading">Showroom</h1>
 
             <div className={styles.contenido}>
-                <Image src="/img/andres.webp" width={500} height={800} alt="Foto personal sobre mi" />
+                {/* <Image src="/img/andres.webp" width={500} height={800} alt="Foto personal sobre mi" /> */}
 
                 <div>
                   <p>In suscipit tincidunt justo, quis faucibus neque pulvinar in. Maecenas lacus libero, imperdiet id urna nec, fringilla euismod sem. In aliquet molestie sapien, aliquam interdum ipsum mollis et. Suspendisse interdum dictum pretium. Vivamus vel hendrerit est. Maecenas non accumsan enim. Aliquam faucibus nisl non erat mattis facilisis. Integer suscipit lobortis lectus id sollicitudin. </p>

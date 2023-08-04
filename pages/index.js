@@ -21,7 +21,7 @@ export default function Home({ sandalias, curso }) {
 
         <Curso curso={curso.attributes} />
 
-        <section className="contenedor">
+        {/* <section className="contenedor">
           <h2 className="heading">Sandalias</h2>
 
           <div className={styles.grid}>
@@ -29,7 +29,7 @@ export default function Home({ sandalias, curso }) {
               <Sandalia key={sandalia.id} sandalia={sandalia.attributes} />
             ))}
           </div>
-        </section>
+        </section> */}
       </Layout>
     </>
   );

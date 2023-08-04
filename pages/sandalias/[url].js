@@ -2,7 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import styles from "../../styles/chema.module.css";
 import Layout from "../../components/layout";
-
+import Link from "next/link";
 export default function Producto({ sandalia, agregarCarrito }) {
   const [cantidad, setCantidad] = useState(0);
   const { nombre, descripcion, imagen, precio } = sandalia[0].attributes;
@@ -51,15 +51,19 @@ export default function Producto({ sandalia, agregarCarrito }) {
                 onChange={(e) => setCantidad(Number(e.target.value))}
                 id="cantidad"
               >
-                <option value="0">--Seleccione--</option>
+                <option value="0">Seleccione la cantidad</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
                 <option value="5">5</option>
               </select>
-
               <input type="submit" value="Agregar al carrito" />
+              <Link href='/tienda'>
+            <a className={styles.volver}>
+                Volver a tienda
+            </a>
+        </Link>
             </form>
           </div>
         </div>
@@ -74,7 +78,7 @@ export async function getStaticPaths() {
 
   const paths = data.map((sandalia) => ({
     params: {
-      url: sandalia.attributes.url,
+      url: sandalia.attributes.url
     },
   }));
   return {

@@ -48,7 +48,7 @@ export default function Header() {
       </Link>
       <Link href="/nosotros">
         <a className={router.pathname === "/nosotros" ? styles.active : ""}>
-          Historia
+          Showroom
         </a>
       </Link>
     <Link href="/carrito">

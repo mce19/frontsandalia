@@ -148,9 +148,8 @@ export default function Carrito({
                   }}
                 >
                   <option value="">Opciones</option>
-                  <option value="Pago simpe">Pago con simpe</option>
-                  <option value="Pago contra entrega">Pago contra entrega</option>
-                  <option value="Tarjeta de crédito">Tarjeta de crédito</option>
+                  <option value="Pago simpe">SIMPE móvil</option>
+                  <option value="Pago contra entrega">Efectivo</option>
                   <option value="Transferencia bancaria">Transferencia bancaria</option>
                 </select>
               </div>
@@ -169,9 +168,9 @@ export default function Carrito({
                   }}
                 >
                   <option value="">Opciones</option>
-                  <option value="Envío por correo">Envío por correos</option>
-                  <option value="Paso a retirar">Paso a retirar</option>
-                  <option value="Envío privado">Envío privado</option>
+                  <option value="Envío por correo">Correos de Costa Rica</option>
+                  <option value="Paso a retirar">Mensajería privada</option>
+                  <option value="Envío privado">Recoger en la tienda</option>
                 </select>
               </div>
               <div>
