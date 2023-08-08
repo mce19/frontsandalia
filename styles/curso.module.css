@@ -22,10 +22,6 @@
     color: var(--white);
 }
 
-.flotar {
-    animation: flotar 1s ease-in-out infinite;
-  }
-  
   @keyframes flotar {
     0% {
       transform: translateY(0);

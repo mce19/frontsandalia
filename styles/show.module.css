@@ -1,0 +1,49 @@
+
+.curso {
+    padding: 10rem 0;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+}
+@media (max-width: 768px) {
+    .curso {
+      padding: 5rem 0;
+    }
+    
+    .curso h2 {
+      font-size: 2.5rem; 
+      margin-bottom: 1rem;
+      margin-top: 1rem; 
+    }
+    
+  }
+  
+.curso p {
+    text-align: center;
+    font-size: 2.4rem;
+    color: var(--white);
+}
+
+.flotarContainer {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-top: 2rem; /* Espacio superior para separar del contenido anterior */
+    animation: flotar 1s ease-in-out infinite;
+  }
+
+  @keyframes flotar {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+
+

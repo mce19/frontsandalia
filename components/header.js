@@ -41,16 +41,16 @@ export default function Header() {
           Inicio
         </a>
       </Link>
-      <Link href="/tienda">
-        <a className={router.pathname === "/tienda" ? styles.active : ""}>
-          Colección
-        </a>
-      </Link>
-      <Link href="/nosotros">
-        <a className={router.pathname === "/nosotros" ? styles.active : ""}>
+      <Link href="/showroom">
+        <a className={router.pathname === "/showroom" ? styles.active : ""}>
           Showroom
         </a>
       </Link>
+      {/* <Link href="/nosotros">
+        <a className={router.pathname === "/nosotros" ? styles.active : ""}>
+          Showroom
+        </a>
+      </Link> */}
     <Link href="/carrito">
         <a className={router.pathname === "/carrito" ? styles.active : ""}>
           <Image

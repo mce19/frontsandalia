@@ -11,7 +11,7 @@ export default function Producto({ sandalia, agregarCarrito }) {
     e.preventDefault();
 
     if (cantidad < 1) {
-      alert("Cantidad no validad");
+      alert("Cantidad no valida");
       return;
     }
 
@@ -59,7 +59,7 @@ export default function Producto({ sandalia, agregarCarrito }) {
                 <option value="5">5</option>
               </select>
               <input type="submit" value="Agregar al carrito" />
-              <Link href='/tienda'>
+              <Link href='/'>
             <a className={styles.volver}>
                 Volver a tienda
             </a>

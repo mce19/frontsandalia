@@ -38,7 +38,6 @@ export default function Home({ sandalias, curso }) {
 export async function getStaticProps() {
   const urlSandalias = `${process.env.API_URL}/sandaliases?populate=imagen`;
   const urlCurso = `${process.env.API_URL}/oferta?populate=imagen`;
-
   const [resSandalias, resCurso] = await Promise.all([
     fetch(urlSandalias),
     fetch(urlCurso),

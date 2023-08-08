@@ -9,7 +9,7 @@
 
 @media only screen and (max-width: 600px) {
   .chemas {
-    grid-template-columns: 1fr 1.5fr; /* Modificar los valores de columnas si es necesario */
+    grid-template-columns: 2fr 1.5fr; /* Modificar los valores de columnas si es necesario */
     max-width: 25rem;
   }
 

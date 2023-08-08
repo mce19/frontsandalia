@@ -28,8 +28,8 @@ export default function Curso({ curso }) {
             <a target="_blank" rel="noopener noreferrer">
               <Image className={styles.flotar}
                 src="/img/whattsapp.webp"
-                width={80}
-                height={70}
+                width={60}
+                height={60}
                 alt="whatsapp de Andres"
               />
             </a>

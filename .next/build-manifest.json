@@ -30,15 +30,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/nosotros": [
+    "/sandalias/[url]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/nosotros.js"
+      "static/chunks/pages/sandalias/[url].js"
     ],
-    "/tienda": [
+    "/showroom": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/tienda.js"
+      "static/chunks/pages/showroom.js"
     ]
   },
   "ampFirstPages": []
